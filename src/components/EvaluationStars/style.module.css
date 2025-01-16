@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  width: 24px;
+}

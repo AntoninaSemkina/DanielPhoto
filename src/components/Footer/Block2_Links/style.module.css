@@ -1,0 +1,68 @@
+@import url("../../../var.css");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  border-left: 1px solid var(--border-line);
+  border-right: 1px solid var(--border-line);
+  text-align: left;
+  height: 450px;
+}
+
+.info {
+  top: 0;
+  padding: 80px 40px;
+}
+
+.title {
+  font-size: 18px;
+  font-family: "Manrope";
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--block-title-grey);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: "Manrope";
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+a {
+  color: var(--block-info2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-line);
+}
+a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    height: 350px;
+  }
+  .info {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    width: 100%;
+    display: grid;
+    height: 493px;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .info {
+    padding: 25px 20px;
+  }
+  .li,
+  .title {
+    font-size: 14px;
+  }
+}

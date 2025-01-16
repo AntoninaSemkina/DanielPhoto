@@ -1,0 +1,57 @@
+@import url("../../var.css");
+
+.container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  border: 1px solid var(--border-line);
+  height: 450px;
+}
+
+.container2 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.container3 {
+  margin: auto;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: var(--block-title-grey);
+  margin: 20px;
+}
+.btn1,
+.btn2 {
+  background-color: var(--main-bg-color);
+  border: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Manrope";
+  color: var(--block-title-grey);
+  margin: 20px auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .container1 {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container2 {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+  .container1 {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    height: 703px;
+    border: 1px solid var(--border-line);
+  }
+}

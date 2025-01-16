@@ -1,0 +1,31 @@
+@import url("../../var.css");
+
+.container {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 10px 10px 0px 10px;
+  margin: auto;
+  border-left: 1px solid var(--border-line);
+  border-right: 1px solid var(--border-line);
+}
+
+.navContainer {
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navContainer .Navigation {
+    display: none;
+  }
+  .navContainer .BurgerMenu {
+    display: block;
+  }
+}

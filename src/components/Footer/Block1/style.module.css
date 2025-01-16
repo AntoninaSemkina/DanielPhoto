@@ -1,0 +1,85 @@
+@import url("../../../var.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-left: 1px solid var(--border-line);
+  height: 450px;
+  margin: auto;
+}
+.block1 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--h3);
+  padding: 100px 20px 0px 50px;
+}
+.block2 {
+  width: 100%;
+  text-align: left;
+  padding: 50px 20px 20px 50px;
+}
+
+.block2_el1 {
+  font-family: "Manrope";
+  font-size: 58px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--h2);
+}
+.block2_el3 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 58px;
+  font-weight: 600;
+  color: var(--h2);
+}
+.block2_el {
+  width: 25%;
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    height: 350px;
+    margin: 0;
+    width: 40%;
+  }
+  .block1 {
+    font-size: 16px;
+
+    padding: 20px 20px;
+  }
+  .block2_el1 {
+    font-size: 48px;
+  }
+  .block2_el3 {
+    font-size: 48px;
+  }
+  .block2 {
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    height: 210px;
+    width: 100%;
+    border: 1px solid var(--border-line);
+  }
+  .block1 {
+    font-size: 14px;
+  }
+  .block2_el1 {
+    padding-top: 10px;
+    font-size: 28px;
+  }
+  .block2_el3 {
+    font-size: 28px;
+  }
+  .block2 {
+    width: 100%;
+  }
+}

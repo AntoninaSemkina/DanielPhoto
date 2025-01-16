@@ -1,0 +1,30 @@
+@import url("../../var.css");
+
+.themeToggleButton {
+  display: fixed;
+  background-color: var(--violet-dark);
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin: 5px 0 0 0;
+  box-shadow: 4px 4px 17.4px 0px #ffffff47 inset;
+  border: 1px solid var(--border-line);
+  z-index: 1;
+  cursor: pointer;
+  font-size: 12px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .themeToggleButton {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .themeToggleButton {
+    width: 150px;
+    height: 30px;
+    margin: 90px 0 0 0;
+  }
+}

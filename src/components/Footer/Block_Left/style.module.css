@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  width: 10%;
+  height: 450px;
+}
+.img {
+  width: 100%;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("../../../../var.css");
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 346px;
+  margin: auto;
+}
+.block1,
+.block3 {
+  width: 35%;
+  text-align: left;
+  margin: auto;
+}
+.block2 {
+  width: 30%;
+}
+.block2_el1 {
+  width: 346px;
+  height: 346px;
+}
+.block1_el1 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 22px;
+  font-weight: 500;
+  height: 25%;
+  color: var(--h3);
+}
+.block1_el2 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--h2);
+}
+.block3_el1 {
+  width: 30%;
+  font-family: "Manrope";
+  font-size: 58px;
+  font-weight: 600;
+  color: var(--h2);
+  margin: auto 0;
+}
+.block3_el3 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 58px;
+  font-weight: 600;
+  color: var(--h2);
+}
+.block3_el {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+@media screen and (max-width: 390px) {
+  .block2_el1 {
+    display: none;
+  }
+  .container {
+    margin-top: 50px;
+    flex-direction: column;
+    height: 268px;
+  }
+  .block1,
+  .block3 {
+    width: 100%;
+    text-align: left;
+  }
+  .block1_el1 {
+    font-size: 14px;
+  }
+  .block1_el2 {
+    font-size: 40px;
+  }
+  .block3_el1,
+  .block3_el3 {
+    text-align: left;
+    font-size: 28px;
+  }
+  .block3_el1 {
+    width: 20%;
+  }
+}

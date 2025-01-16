@@ -1,0 +1,69 @@
+@import url("../../../var.css");
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Manrope";
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: var(--button-bg);
+  gap: 20px;
+}
+
+span {
+  display: inline-block;
+}
+
+.img {
+  width: 10%;
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.itemsMarquee {
+  flex-shrink: 0;
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+  justify-content: space-between;
+  width: 100%;
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2rem;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 20px 0px 20px 20px;
+  transition: all 0.5s ease-in-out;
+  color: var(--violet-light);
+}
+.item:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .item {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0px 10px 10px;
+  }
+  .container {
+    gap: 10px;
+  }
+}

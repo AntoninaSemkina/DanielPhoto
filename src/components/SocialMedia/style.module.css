@@ -1,0 +1,54 @@
+@import url("../../var.css");
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Центрирует содержимое по вертикали */
+}
+
+.icon {
+  width: 24px;
+}
+
+.block1 {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  border-radius: 30px;
+  border: 1px solid var(--border-line);
+  padding: 5px;
+  background-color: var(--main-bg-color);
+}
+.a_social {
+  display: flex;
+  justify-content: center; /* Центрирует иконку по горизонтали */
+  align-items: center; /* Центрирует иконку по вертикали */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--button-bg);
+  border: 1px solid var(--border-line);
+}
+.icon_social {
+  width: 50%;
+  height: 50%;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 160px;
+  }
+  .a_social {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    width: 160px;
+  }
+  .a_social {
+    width: 40px;
+    height: 40px;
+  }
+}

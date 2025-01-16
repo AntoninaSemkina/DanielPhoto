@@ -1,0 +1,7 @@
+@import url("../../../var.css");
+.logo {
+  font-size: 40px;
+  font-family: "Manrope";
+  color: var(--main-txt-color);
+  margin-top: 10px;
+}

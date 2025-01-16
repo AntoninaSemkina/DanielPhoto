@@ -1,0 +1,151 @@
+@import url("../../../../../var.css");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.reviewBlock {
+  width: 30%;
+  border-radius: 5%;
+  background: var(--main-bg-color) url("../../../../../images/Abstract.png")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 5%;
+  gap: 10px;
+  height: 322px;
+}
+.box1 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box1_el1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin: 20px;
+}
+.box1_el2 {
+  width: 40%;
+}
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Manrope";
+  color: var(--h2);
+  text-align: left;
+}
+.stars {
+  margin: 40px 20px;
+}
+.reviewText {
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+.location {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Manrope";
+  color: var(--h3);
+  text-align: left;
+}
+span {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Manrope";
+  color: var(--h2);
+}
+.controls {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .controls {
+    display: none;
+  }
+  .reviewBlock {
+    height: 265px;
+  }
+  .reviewText span {
+    font-size: 18px;
+  }
+  .stars {
+    margin: 0px 20px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .box1_el1 {
+    width: 60%;
+  }
+  .box1_el2 {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+  .reviewBlock {
+    width: 100%;
+  }
+  .controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 65px;
+    border-radius: 45px;
+    border: 1px solid var(--border-line);
+    margin: 40px 119px;
+  }
+  .btn1,
+  .btn2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--border-line);
+    background: var(--button-bg);
+    margin: auto;
+    cursor: pointer;
+  }
+  .arrow {
+    width: 28px;
+    height: 28px;
+  }
+  .block1_el1 {
+    font-size: 16px;
+  }
+  .block1_el2 {
+    font-size: 14px;
+  }
+  .span {
+    font-size: 14px;
+  }
+  .block1_right {
+    width: 40%;
+  }
+  .icon {
+    width: 10%;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .reviewText span {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,122 @@
+@import url("../../../../../var.css");
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: auto;
+  order: 1;
+}
+.img {
+  width: 25%;
+}
+.block1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+.block2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+.block1_el1 {
+  font-family: "Manrope";
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--block-title-grey);
+  line-height: 60px;
+  margin-top: 10px;
+}
+.block1_el2 {
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--block-title-grey);
+}
+.block1_el {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.itemsMarquee {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  animation: marquee 20s linear infinite;
+}
+.item {
+  font-family: "Manrope";
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-txt-color);
+  padding: 10px;
+  gap: 10px;
+}
+.block2_el1 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Manrope";
+  line-height: 27px;
+  color: var(--block-title);
+}
+.block2_el2,
+.block2_el3,
+.block2_el4,
+.block2_el5 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid var(--border-line);
+  border-radius: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    gap: 20px;
+  }
+  .block1_el1 {
+    font-size: 34px;
+  }
+  .block1_el2 {
+    font-size: 16px;
+  }
+  .item {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .block2 {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    width: 100%;
+    order: 2;
+    gap: 20px;
+  }
+  .block1_el1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .item {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .block2 {
+    gap: 10px;
+  }
+}

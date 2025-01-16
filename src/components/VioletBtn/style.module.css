@@ -1,0 +1,27 @@
+@import url("../../var.css");
+
+.btn {
+  background-color: var(--violet-dark);
+  border-radius: 100px;
+  width: 130px;
+  height: 66px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 4px 4px 17.4px 0px #ffffff47 inset;
+  border: 1px solid var(--border-line);
+  cursor: pointer;
+}
+.img {
+  width: 25%;
+}
+@media screen and (max-width: 1440px) {
+  .btn {
+    width: 100px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .btn {
+    width: 80px;
+    height: 48px;
+  }
+}

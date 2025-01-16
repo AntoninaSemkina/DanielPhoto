@@ -1,0 +1,17 @@
+.container {
+  order: 2;
+  width: 50%;
+}
+.img {
+  width: 95%;
+  float: right;
+}
+@media screen and (max-width: 390px) {
+  .container {
+    width: 100%;
+    order: 1;
+  }
+  .img {
+    width: 100%;
+  }
+}

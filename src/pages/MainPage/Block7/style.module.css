@@ -1,0 +1,33 @@
+@import url("../../../var.css");
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 150px 0px 0px 0px;
+}
+.block1 {
+  margin: auto;
+  width: 90%;
+  font-family: "Manrope";
+  font-size: 300px;
+  font-weight: 600;
+  color: var(--button-bg);
+  text-align: right;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+  }
+  .block1 {
+    font-size: 169px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    margin: 100px 0px 0px 0px;
+  }
+  .block1 {
+    font-size: 63px;
+  }
+}

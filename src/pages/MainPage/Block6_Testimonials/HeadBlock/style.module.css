@@ -1,0 +1,129 @@
+@import url("../../../../var.css");
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 150px 0px 50px 0px;
+  border-bottom: 1px solid var(--border-line);
+}
+.block1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+}
+.block2 {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  height: 82px;
+  margin-block: auto;
+}
+.block1_el1 {
+  font-size: 20px;
+  font-family: "Manrope";
+  font-weight: 600;
+  color: var(--h3);
+}
+.block1_el2 {
+  font-size: 58px;
+  font-family: "Manrope";
+  font-weight: 600;
+  color: var(--h2);
+}
+.block1_el3 {
+  font-size: 18px;
+  font-family: "Manrope";
+  font-weight: 400;
+  color: var(--h3);
+}
+.block1_el4 {
+  font-size: 28px;
+  font-family: "Manrope";
+  font-weight: 500;
+  color: var(--h2);
+}
+.btn1,
+.btn2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid var(--border-line);
+  background: var(--button-bg);
+  margin: auto;
+  cursor: pointer;
+}
+.arrow {
+  width: 34px;
+  height: 34px;
+}
+.block2_el1 {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  border-radius: 45px;
+  border: 1px solid var(--border-line);
+  padding: 5px;
+  gap: 10px;
+}
+.block2_el2 {
+  width: 40%;
+  margin: auto;
+}
+.btn3 {
+  border-radius: 10px;
+  border: 1px solid;
+  background: var(--button-bg);
+  border-image-source: linear-gradient(
+    135.66deg,
+    var(--border-line) 28.87%,
+    rgba(47, 47, 55, 0) 76.42%
+  );
+  width: 210px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  font-family: "Manrope";
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .block1_el2 {
+    font-size: 48px;
+  }
+  .block1 {
+    width: 85%;
+  }
+  .block2 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    margin: 20px 0px 20px 0px;
+    flex-direction: column;
+  }
+  .block1,
+  .block2 {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .block1_el1 {
+    font-size: 14px;
+  }
+  .block1_el2 {
+    font-size: 28px;
+  }
+  .btn {
+    font-size: 14px;
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  .block2_el1 {
+    display: none;
+  }
+  .block2_el2 {
+    margin: 0;
+  }
+}
